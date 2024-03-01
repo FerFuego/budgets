@@ -103,10 +103,7 @@ class UI {
         // Extract data
         const { budget, remaining } = data;
 
-        this.result.classList.remove('alert-success')
-        this.result.classList.remove('alert-warning')
-        this.result.classList.remove('alert-info')
-        this.result.classList.remove('alert-danger')
+        this.result.classList.remove('alert-success','alert-warning','alert-info','alert-danger')
 
         if (remaining <= 0) {
             this.form.querySelector('button[type="submit"]').disabled = true;
